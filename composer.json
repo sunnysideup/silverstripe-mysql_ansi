@@ -1,5 +1,5 @@
 {
-	"name": "silverstripe/mysql_ansi",
+	"name": "sunnysideup/mysql_ansi",
 	"type": "silverstripe-module",
 	"description": "setup mysql database as ANSI",
 	"homepage": "http://www.silverstripe-webdevelopment.com",
