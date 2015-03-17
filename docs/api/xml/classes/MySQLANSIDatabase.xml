@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="MySQLANSIDatabase" namespace="" name="MySQLANSIDatabase" abstract="false" final="false" start="7" end="39">
+  <file path="/var/www/_modules/mysql_ansi/trunk/docs/en/phpdox/../../../code" file="MySQLANSIDatabase.php" realpath="/var/www/_modules/mysql_ansi/trunk/code/MySQLANSIDatabase.php" size="830" time="2015-03-14T10:22:09+13:00" unixtime="1426281729" sha1="3922411772de647642d229231a1c804d34f6430d" relative="code/MySQLANSIDatabase.php"/>
+  <docblock>
+    <description compact="MySQL connector class."/>
+    <package value="sapphire"/>
+    <subpackage value="model"/>
+  </docblock>
+  <extends full="MySQLDatabase" namespace="" name="MySQLDatabase"/>
+  <member name="dbConn" type="{unknown}" visibility="private" line="12">
+    <docblock>
+      <description compact="Connection to the DBMS."/>
+      <var type="resource"/>
+    </docblock>
+  </member>
+  <member name="active" type="{unknown}" visibility="private" line="18">
+    <docblock>
+      <description compact="True if we are connected to a database."/>
+      <var type="boolean"/>
+    </docblock>
+  </member>
+  <member name="database" type="{unknown}" visibility="private" line="24">
+    <docblock>
+      <description compact="The name of the database."/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="34" end="37" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Connect to a MySQL database."/>
+      <param description="An map of parameters, which should include:" type="array" variable="$parameters">- server: The server, eg, localhost
+ - username: The username to log on with
+ - password: The password to log on with
+ - database: The database to connect to</param>
+    </docblock>
+    <parameter name="parameters" byreference="false" type="{unknown}"/>
+  </constructor>
+</class>

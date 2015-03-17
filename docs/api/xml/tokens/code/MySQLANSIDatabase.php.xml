@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/var/www/_modules/mysql_ansi/trunk/docs/en/phpdox/../../../code" file="MySQLANSIDatabase.php" realpath="/var/www/_modules/mysql_ansi/trunk/code/MySQLANSIDatabase.php" size="830" time="2015-03-14T10:22:09+13:00" unixtime="1426281729" sha1="3922411772de647642d229231a1c804d34f6430d" relative="code/MySQLANSIDatabase.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="3">
+    <token name="T_DOC_COMMENT"> * MySQL connector class.</token>
+  </line>
+  <line no="4">
+    <token name="T_DOC_COMMENT"> * @package sapphire</token>
+  </line>
+  <line no="5">
+    <token name="T_DOC_COMMENT"> * @subpackage model</token>
+  </line>
+  <line no="6">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="7">
+    <token name="T_CLASS">class</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">MySQLANSIDatabase</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_EXTENDS">extends</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">MySQLDatabase</token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="8">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="9">
+    <token name="T_DOC_COMMENT">	 * Connection to the DBMS.</token>
+  </line>
+  <line no="10">
+    <token name="T_DOC_COMMENT">	 * @var resource</token>
+  </line>
+  <line no="11">
+    <token name="T_DOC_COMMENT">	 */</token>
+  </line>
+  <line no="12">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_PRIVATE">private</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$dbConn</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="13"/>
+  <line no="14">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="15">
+    <token name="T_DOC_COMMENT">	 * True if we are connected to a database.</token>
+  </line>
+  <line no="16">
+    <token name="T_DOC_COMMENT">	 * @var boolean</token>
+  </line>
+  <line no="17">
+    <token name="T_DOC_COMMENT">	 */</token>
+  </line>
+  <line no="18">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_PRIVATE">private</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$active</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="19"/>
+  <line no="20">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="21">
+    <token name="T_DOC_COMMENT">	 * The name of the database.</token>
+  </line>
+  <line no="22">
+    <token name="T_DOC_COMMENT">	 * @var string</token>
+  </line>
+  <line no="23">
+    <token name="T_DOC_COMMENT">	 */</token>
+  </line>
+  <line no="24">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_PRIVATE">private</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$database</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="25"/>
+  <line no="26">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="27">
+    <token name="T_DOC_COMMENT">	 * Connect to a MySQL database.</token>
+  </line>
+  <line no="28">
+    <token name="T_DOC_COMMENT">	 * @param array $parameters An map of parameters, which should include:</token>
+  </line>
+  <line no="29">
+    <token name="T_DOC_COMMENT">	 *  - server: The server, eg, localhost</token>
+  </line>
+  <line no="30">
+    <token name="T_DOC_COMMENT">	 *  - username: The username to log on with</token>
+  </line>
+  <line no="31">
+    <token name="T_DOC_COMMENT">	 *  - password: The password to log on with</token>
+  </line>
+  <line no="32">
+    <token name="T_DOC_COMMENT">	 *  - database: The database to connect to</token>
+  </line>
+  <line no="33">
+    <token name="T_DOC_COMMENT">	 */</token>
+  </line>
+  <line no="34">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">__construct</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$parameters</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="35">
+    <token name="T_WHITESPACE"> 		</token>
+    <token name="T_STRING">parent</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">__construct</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$parameters</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="36">
+    <token name="T_WHITESPACE"> 		</token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">query</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"SET sql_mode = 'ANSI'"</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="37">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="38"/>
+  <line no="39">
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="40"/>
+</source>
