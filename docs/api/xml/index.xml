@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<index xmlns="http://xml.phpdox.net/src" basedir="/var/www/_modules/mysql_ansi/trunk">
-  <namespace name="">
-    <class name="MySQLANSIDatabase" src="code/MySQLANSIDatabase.php" description="MySQL connector class." xml="classes/MySQLANSIDatabase.xml"/>
-  </namespace>
-</index>

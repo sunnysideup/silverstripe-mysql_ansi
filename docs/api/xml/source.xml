@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<source xmlns="http://xml.phpdox.net/src">
-  <dir name="/var/www/_modules/mysql_ansi/trunk">
-    <file name="_config.php" size="546" time="2015-03-14T10:22:09+13:00" unixtime="1426281729" sha1="e89d4dc2294689d03acdf6d30744755b77d8b935" xml="tokens/_config.php.xml"/>
-    <dir name="code">
-      <file name="MySQLANSIDatabase.php" size="830" time="2015-03-14T10:22:09+13:00" unixtime="1426281729" sha1="3922411772de647642d229231a1c804d34f6430d" xml="tokens/code/MySQLANSIDatabase.php.xml"/>
-    </dir>
-  </dir>
-</source>
